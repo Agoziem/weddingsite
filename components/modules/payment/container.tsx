@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import { PaystackButton } from "react-paystack";
 import { toast } from "sonner";
@@ -20,10 +20,15 @@ const PaymentContainer = () => {
   });
   const [showPaymentConfirmation, setShowPaymentConfirmation] = useState(false);
   const [componentProps, setComponentProps] = useState<any>(null);
+  const [isClient, setIsClient] = useState(false);
   const disabled = !form.name || !form.email || !form.amount || !form.phone;
 
   const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
   const router = useRouter();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const generateReference = () => {
     const timestamp = new Date().getTime();
@@ -245,7 +250,7 @@ const PaymentContainer = () => {
               </div>
 
               <div className="space-y-3">
-                {componentProps && (
+                {componentProps && isClient && (
                   <PaystackButton
                     {...componentProps}
                     className="w-full h-14 text-base font-semibold bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-white rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2"
