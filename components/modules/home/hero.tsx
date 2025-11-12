@@ -56,7 +56,7 @@ export default function HeroSection() {
         <section className="w-full h-screen flex flex-col md:flex-row">
           {/* Left Side - Image */}
           <motion.div 
-            className="relative w-full md:w-1/2 h-64 md:h-full"
+            className="relative hidden md:block w-full md:w-1/2 h-64 md:h-full"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                <h1 className="text-7xl sm:text-8xl md:text-7xl lg:text-8xl font-gothic font-light text-gradient mb-2">
+                <h1 className="text-6xl sm:text-8xl md:text-7xl lg:text-8xl font-gothic font-light text-gradient mb-2">
                   Nonso & Adanna
                 </h1>
                 <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
