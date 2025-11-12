@@ -15,7 +15,7 @@ const GallerySection = () => {
   
   return (
     <section ref={ref} id="gallery" className="py-20 bg-background text-foreground">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <motion.h2 

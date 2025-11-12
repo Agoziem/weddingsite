@@ -13,7 +13,7 @@ const GiftTheCouple = () => {
 
   return (
     <section ref={ref} id="gift-the-couple" className="py-20 bg-background text-foreground">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Image */}
           <motion.div 

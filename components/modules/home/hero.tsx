@@ -71,7 +71,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Right Side - Content */}
-          <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 lg:px-20 py-12 md:py-0 relative">
+          <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 lg:px-20 py-12 relative">
             {/* Wedding Ring Decoration */}
             <motion.div 
               className="absolute -right-20 top-1/4 w-120 h-120 opacity-20 pointer-events-none z-0"

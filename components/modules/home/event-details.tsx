@@ -21,7 +21,7 @@ const EventDetails = () => {
 
   return (
     <section ref={ref} id="event-details" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[95%] md:max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <motion.div 
