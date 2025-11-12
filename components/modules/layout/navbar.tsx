@@ -1,3 +1,4 @@
+"use client";
 import { Menu, MoonIcon, SunIcon, X, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import React from "react";
